@@ -35,7 +35,7 @@ print(summar_idades)
 # %%
 ### Importe os indices de uma serie funciona da mesma forma que chaves de um dicionário, nao existe a chave -1
 #o indice fica vinculado aquela linha e elemento da série
-#pode term dois indices iguais apontando por numeros diferetnes
+#pode ter dois indices iguais apontando por numeros diferetnes
 
 #agora olha pra indice como posição e não chave
 series_idades.iloc[-1]
