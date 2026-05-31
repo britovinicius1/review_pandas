@@ -2,7 +2,7 @@
 #%%
 # #ordernar
 import pandas as pd
-clientes = pd.read_csv("../dados/clientes.csv", sep=";")
+clientes = pd.read_csv("../data/clientes.csv", sep=";")
 # %%
 clientes
 # %%
