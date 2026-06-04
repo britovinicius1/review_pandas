@@ -59,3 +59,38 @@ uf["Regiao"] = uf["Unidade federativa"].apply(uf_to_regiao)
 # %%
 uf
 # %%
+uf.columns
+#%%
+uf.dtypes
+# %%
+def mortalidade_to_float(x):
+    x = float(x.replace("‰","").replace(",","."))
+    return x
+
+uf["Mortalidade infantil (2016)/1000"] = uf["Mortalidade infantil (2016)"].apply(mortalidade_to_float)
+
+# %%
+uf
+# %%
+uf.iloc[0]
+#%%
+uf.dtypes
+
+
+# %%
+def classifica_bom(linha):
+    return (linha["PIB per capita (R$) (2015)"] > 30000 and linha["Mortalidade infantil (2016)/1000"] < 15 and linha["IDH (2010)"]>700)
+
+
+#%%
+uf["IDH (2010)"] = uf["IDH (2010)"].astype(float)
+#%%
+#assim ele aplica nas linhas
+#recebe linha a linha
+#a onde a linha vem em formato de series e os indices da linhas são as colunas
+
+uf.apply(classifica_bom, axis=1)
+
+# %%
+uf.dtypes
+# %%
