@@ -1,7 +1,7 @@
 #%%
 import pandas as pd
 
-df = pd.read_csv("../dados/transacoes.csv", sep=";")
+df = pd.read_csv("../data/transacoes.csv", sep=";")
 
 df
 

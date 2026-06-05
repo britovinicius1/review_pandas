@@ -6,11 +6,12 @@ df = pd.DataFrame({
     "salario": [2132, 1231, 454, 6543, 6532, 4322, 987, 2134]
 })
 
+
 #%%
 df
 #%%
 #ele mantem a primeira
-df.drop_duplicates(keep="last")
+df.drop_duplicates(subset=["nome", "sobrenome"], keep="last")
 # %%
 df = df.sort_values("salario", ascending=False)
 #%%

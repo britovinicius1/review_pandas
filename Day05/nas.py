@@ -43,6 +43,11 @@ df.fillna(0)
 df.fillna({'nome': 'alguem', 'idade':0})
 # %%
 medias = df[['idade', 'salario']].mean()
+
+#%%
+
+medias
+
 #%%
 df = df.fillna({'nome': 'alguem'})
 # %%

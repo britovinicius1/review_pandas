@@ -2,7 +2,6 @@
 ## Comentarios ->> a serie converte tudo para o mesmo tipo.
 ## As series tem alguns metodos
 
-
 import pandas as pd
 
 pd.Series()

@@ -34,6 +34,8 @@ brinquedo = pd.DataFrame(
     }
 )
 #%%
+brinquedo
+#%%
 brinquedo.sort_values(by=["salario", "idade"], ascending=[False,True])
 
 # %%

@@ -19,4 +19,4 @@ clientes["novo_id"] = clientes["idCliente"].apply(get_last_id)
 ##aplica transformações linha a linha, elemento a elemento
 # %%
 clientes
-# %%
+ # %%
