@@ -1,6 +1,6 @@
 #%%
 import pandas as pd
-df = pd.read_csv("../dados/transacao_produto.csv", sep=";")
+df = pd.read_csv("../data/transacao_produto.csv", sep=";")
 df
 # %%
 
@@ -14,7 +14,7 @@ filtro
 df[filtro]
 
 # %%
-df = pd.read_csv("../dados/clientes.csv", sep=";")
+df = pd.read_csv("../data/clientes.csv", sep=";")
 # %%
 df
 # %%

@@ -1,7 +1,7 @@
 #%%
 import pandas as pd
 import numpy as np
-df = pd.read_csv("../dados/clientes.csv", sep=";")
+df = pd.read_csv("../data/clientes.csv", sep=";")
 df
 # %%
 #serie pode contar como um vetor
