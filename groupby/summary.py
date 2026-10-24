@@ -22,7 +22,7 @@ summary = (transacoes.groupby(by=["IdCliente"], as_index=False)
                     
                     )
 # %%
-summary.columns
+summary
 # %%
 summary.columns = ['idCliente', 'qtdeTransacoes', 'totalPontos', 'avgPontos']
 summary

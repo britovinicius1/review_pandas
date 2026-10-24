@@ -1,7 +1,7 @@
 #%%
-## Comentarios ->> a serie converte tudo para o mesmo tipo.
-## As series tem alguns metodos
+## Comentarios ->> a serie converte tudo para o mesmo tipo. Os valores dentro de uma série é do msm tipo
 
+## As series tem alguns metodos
 import pandas as pd
 
 pd.Series()
@@ -20,16 +20,26 @@ media = sum(idades)/len(idades)
 print(media)
 
 # %%
+
+# os valores dentro da serie são do mesmo tipo
+
+
 series_idades = pd.Series(idades)
 series_idades
 
 # %%
+#alguns metodos de séries.
 media_idades = series_idades.mean()
 variancia_idades = series_idades.var()
 
 summar_idades = series_idades.describe()
 
+
 print(summar_idades)
+
+#%%
+series_idades
+
 
 # %%
 ### Importe os indices de uma serie funciona da mesma forma que chaves de um dicionário, nao existe a chave -1
