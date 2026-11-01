@@ -1,0 +1,1 @@
+SELECT * FROM olist_orders_dataset LIMIT 10

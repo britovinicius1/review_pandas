@@ -40,4 +40,6 @@ series_idades.iloc[::-1]
 series_idades.loc[0]
 
 # %%
+iloc e loc [Rows, Columns]
+#iloc only use index values
 
